@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 2px;
+}
+
+tr:nth-child(1) {
+  color: white;
+  background-color: #003e5c;
+}
+</style>
+    <title>Elliot Vincent</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Personal webpage">
+    <meta name="author" content="Elliot Vincent">    
+    <link rel="shortcut icon" href="favicon-32x32.png"> 
+    
+    <!-- FontAwesome JS-->
+    <script src="https://use.fontawesome.com/releases/v6.7.1/js/all.js" integrity="sha384-rxRGDl9CoH4u0AIeVyasIKlE45FVz6H2qXIl+fmc+3ImJn0CvfCseru5J4PALGH/" crossorigin="anonymous"></script>
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:400,700" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> -->
+
+</head>
+
+<body>
+
+    <header class="header text-center">
+            <h1 class="blog-name pt-lg-4 mb-0"><a href="/~elliot.vincent/">Elliot Vincent</a></h1>
+
+            <nav class="navbar navbar-expand-lg navbar-dark" >
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div id="navigation" class="collapse navbar-collapse flex-column" >
+                                <div class="profile-section pt-3 pt-lg-0">
+                                    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image" >
+
+					<div class="bio mb-3">73 Avenue de Paris<br>
+							      94160 Saint-Mandé, France<br>
+							      <b>Email:</b> elliot.vincent at ign dot fr</div><!--//bio-->
+                                        <ul class="social-list list-inline py-3 mx-auto">
+                                    <li class="list-inline-item"><a href="https://bsky.app/profile/elliotvincent.bsky.social"><i class="fa-brands fa-bluesky"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://twitter.com/Elt_Vincent"><i class="fab fa-twitter fa-fw"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/elliot-vincent"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://github.com/ElliotVincent"><i class="fab fa-github fa-fw"></i></a></li>
+                                <li class="list-inline-item"><a href="https://scholar.google.fr/citations?&user=AUz-y5wAAAAJ"><i class="fa fa-graduation-cap fa-fw"></i></a></li>
+                                </ul><!--//social-list-->
+                                <hr>
+                                </div><!--//profile-section-->
+
+                                <!-- <ul class="navbar-nav flex-column text-left">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/~elliot.vincent/"><i class="fas fa-home fa-fw mr-2"></i>Home <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+                                        </li>
+                                </ul>-->
+                        </div>
+                </nav>
+    </header>
+    <div class="main-wrapper">
+	    	    
+	    <article class="about-section py-5">
+		    <div class="container" style="max-width:1000px">
+<div class="container" style="text-align:center; padding-top:2rem 15px">
+  <div class="row" style="text-align:center">
+    <h2>Detecting Looted Archaeological Sites from Satellite Image Time Series</h2>
+  </div>
+  <div class="row" style="text-align:center">
+    <div class="col-xs-0 col-md-2"></div>
+    <div class="col-xs-12 col-md-8">
+      <h4>
+        <nobr><a href="https://imagine.enpc.fr/~elliot.vincent/">Elliot Vincent</a><sup>1,2</sup></nobr>
+	<nobr><a href="https://www.di.ens.fr/~ponce/">Mehraïl Saroufim</a><sup>3</sup></nobr>
+	<nobr><a href="https://www.di.ens.fr/~ponce/">Jonathan Chemla</a><sup>3</sup></nobr>
+	<nobr><a href="https://www.di.ens.fr/~ponce/">Yves Ubelmann</a><sup>3</sup></nobr>
+	<nobr><a href="https://www.di.ens.fr/~ponce/">Philippe Marquis</a><sup>4</sup></nobr>
+	<nobr><a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a><sup>5,6</sup></nobr>
+	<nobr><a href="https://imagine.enpc.fr/~aubrym/">Mathieu Aubry</a><sup>1</sup></nobr>
+      </h4>
+      <sup>1</sup><nobr>LIGM, Ecole des Ponts</nobr>, <nobr>Univ Gustave Eiffel</nobr>, CNRS<br>
+      <nobr><sup>2</sup>Inria Paris</nobr>&emsp;&emsp;<sup>3</sup><nobr>Iconem</nobr><br>
+      <sup>4</sup><nobr>DAFA, French archaeological delegation in Afghanistan</nobr><br>
+      <nobr><sup>5</sup>Department of Computer Science, Ecole normale superieure (ENS-PSL, CNRS, Inria)</nobr>
+      <nobr><sup>6</sup>Courant Institute of Mathematical Sciences and Center for Data Science, NYU</nobr>
+    </div>
+  </div>
+</div>
+<p></p>
+<div class="container" style="text-align:center; padding:0rem">
+  <div class="row" style="text-align:center">
+    <div class="col-xs-0 col-md-2"></div>
+    <div class="col-xs-2 col-md-1">
+      <h4>
+        <nobr><a class="label label-info" href="http://arxiv.org/pdf/2409.09432"><i class="fas fa-file-pdf fa-fw"></i>&nbsp;Paper</a></nobr>
+      </h4>
+    </div>
+    <div class="col-xs-1 col-md-1"></div>
+    <div class="col-xs-2 col-md-1">
+      <h4>
+  	<nobr><a class="label label-info" href="https://github.com/ElliotVincent/DAFA-LS"><i class="fab fa-github fa-fw"></i>&nbsp;Code</a></nobr>
+      </h4>
+    </div>
+    <div class="col-xs-1 col-md-1"></div>
+    <div class="col-xs-2 col-md-1">
+      <h4>
+  	<nobr><a class="label label-info" href="https://drive.google.com/file/d/16v7_AcRwNeRhCacmQuX2477VYs51f4fU/view?usp=drive_link"><i class="fas fa-database fa-fw"></i>&nbsp;Dataset</a></nobr>
+      </h4>
+    </div>
+    <div class="col-xs-1 col-md-1"></div>
+    <div class="col-xs-2 col-md-1">
+    <h4>
+      <nobr><a class="label label-info" href="./refdafals.bib"><i class="fas fa-quote-left fa-fw"></i>&nbsp;BibTeX</a></nobr>
+    </h4>
+    </div>
+  </div>
+</div>
+<p></p>
+
+<div class="container">
+  <h3>Abstract</h3>
+  <hr/>
+Archaeological sites are the physical remains of past human activity and one of
+the main sources of information about past societies and cultures. However, they
+are also the target of malevolent human actions, especially in countries having
+experienced inner turmoil and conflicts. Because monitoring these sites from space
+is a key step towards their preservation, we introduce the DAFA Looted Sites
+dataset, DAFA-LS, a labeled multi-temporal remote sensing dataset containing
+55,480 images acquired monthly over 8 years across 675 Afghan archaeological
+sites, including 135 sites looted during the acquisition period. DAFA-LS is particularly
+challenging because of the limited number of training samples, the class
+imbalance, the weak binary annotations only available at the level of the time series,
+and the subtlety of relevant changes coupled with important irrelevant ones over a
+long time period. It is also an interesting playground to assess the performance of
+satellite image time series (SITS) classification methods on a real and important
+use case. We evaluate a large set of baselines, outline the substantial benefits of
+using foundation models and show the additional boost that can be provided by
+using complete time series instead of using single images.<p></p>
+  
+
+  <h3>Introducing DAFA-LS</h3>
+  <hr/>
+  <!--
+  <div class="row" style="text-align: center">
+    <div class="hidden-xs col-md-1"></div>
+    <div class="col-xs-12 col-md-10">
+      <h4 width=100% class="highlight" style="padding:0.5em"><b>1. Overview</b></h4>
+      <img src="teaser.jpg" alt="teaser.jpg" class="text-center" style="width: 100%; max-width: 1000px">
+      <p></p>
+      <p>
+      Given a raw categorical collection of images, we learn an autoencoder that explicitly generates shape, texture, 
+      pose and background. At inference time,
+      our approach reconstructs high-quality textured meshes from single-view images.
+      </p>
+    </div>
+    <div class="hidden-xs col-md-1"></div>
+  </div>
+  -->
+  <div class="row" style="text-align:center">
+    <div class="hidden-xs col-md-1"></div>
+    <div class="col-xs-12 col-md-10">
+      <h4 width=100% class="highlight" style="padding:0.5em"><b>1. Monitoring Afghan archaeological sites</b></h4>
+      <img src="assets/images/dafals_overview.png" alt="dafals_overview.png" class="text-center" style="width: 100%; max-width: 1000px">
+      <p></p>
+      <div class="text-justify">
+      <b>Overview.</b> DAFA Looted Sites (DAFA-LS) contains monthly satellite image time series (SITS) of
+Afghan archaeological sites acquired between 2016 and 2023. We show the location of preserved (a)
+and looted (b) sites, adding strong random noise to their coordinates to prevent misuse of the data.
+          We also show images (d-f) from two sites (c): <span style="color:#0000FF";>Ancient Balkh</span> (in blue, top row) has been preserved
+          from looting, while <span style="color:#FF0000";>Dilberjin</span> (in red, bottom row) suffered irreparable damage.      </div>
+    </div>
+    <div class="hidden-xs col-md-1"></div>
+  </div>
+  <div class="row" style="text-align:center">
+    <div class="hidden-xs col-md-1"></div>
+    <div class="col-xs-12 col-md-10">
+      <h4 width=100% class="highlight" style="padding:0.5em"><b>2. Benchmark</b></h4>
+ <table>
+  <tr>
+    <th style="text-align: left;">Method</th>
+    <th>OA</th>
+    <th>F1</th>
+    <th>AUC</th>
+    <th>FAR</th>
+  </tr>
+  <tr>
+      <td colspan="5"><i>Single-frame methods</i></td>
+  </tr>
+  <tr>
+    <td>&emsp;ResNet20</td>
+    <td>54.7</td>
+    <td>54.5</td>
+    <td>75.3</td>
+    <td>54.9</td>
+  </tr>
+  <tr>
+    <td>&emsp;DOFA*</td>
+    <td>76.7</td>
+    <td>67.0</td>
+    <td>84.0</td>
+    <td><b>7.4</b></td>
+  </tr>
+  <tr>
+      <td colspan="5"><i>Multi-frame pixel-wise methods</i></td>
+  </tr>
+  <tr>
+    <td>&emsp;DuPLo</td>
+    <td>52.1</td>
+    <td>50.4</td>
+    <td>50.9</td>
+    <td>52.0</td>
+  </tr>
+  <tr>
+    <td>&emsp;TempCNN</td>
+    <td>55.7</td>
+    <td>44.2</td>
+    <td>58.8</td>
+    <td>34.9</td>
+  </tr>
+  <tr>
+    <td>&emsp;Transformer</td>
+    <td>56.4</td>
+    <td>63.5</td>
+    <td>62.7</td>
+    <td>68.0</td>
+  </tr>
+  <tr>
+    <td>&emsp;LTAE</td>
+    <td>52.5</td>
+    <td>58.0</td>
+    <td>62.0</td>
+    <td>65.7</td>
+  </tr>
+  <tr>
+      <td colspan="5"><i>Multi-frame whole-image methods</i></td>
+  </tr>
+  <tr>
+    <td>&emsp;PSE+LTAE</td>
+    <td>55.1</td>
+    <td>47.7</td>
+    <td>59.5</td>
+    <td>39.4</td>
+  </tr>
+  <tr>
+    <td>&emsp;UTAE</td>
+    <td>62.0</td>
+    <td>58.9</td>
+    <td>64.5</td>
+    <td>39.4</td>
+  </tr>
+  <tr>
+    <td>&emsp;TSViT (classification head)</td>
+    <td>64.3</td>
+    <td>53.0</td>
+    <td>70.8</td>
+    <td>23.4</td>
+  </tr>
+  <tr>
+    <td>&emsp;TSViT (segmentation head)</td>
+    <td>64.6</td>
+    <td>60.2</td>
+    <td>69.6</td>
+    <td>35.5</td>
+  </tr>
+  <tr>
+    <td>&emsp;DOFA*+LTAE</td>
+    <td><b>78.7</b></td>
+    <td><b>74.9</b></td>
+    <td><b>87.1</b></td>
+    <td>18.9</td>
+  </tr>
+</table>
+      <p></p>
+            <div class="text-justify">
+      <b>Classification performance.</b> We evaluate several methods trained on DAFA-LS and
+distinguish between methods that process a single image at a time (single-frame) and methods
+receiving time series as input (multi-frame). Multi-frame methods can be pixel-wise or whole-
+image based. We indicate with a star (*) methods that have been pretrained on another dataset
+                beforehand. Best scores are highlighted in <b>bold</b>.</div>
+    </div>
+    <div class="hidden-xs col-md-1"></div>
+  </div>
+
+  <p></p>
+
+  <h3>BibTeX</h3>
+  <hr/>
+  If you find this work useful for your research, please cite:
+  <div class="card">
+    <div class="card-block">
+      <pre class="card-text clickselect">
+@misc{
+      vincent2024detecting,
+      title={Detecting Looted Archaeological Sites from Satellite Image Time Series},
+      author={Elliot Vincent and Mehraïl Saroufim and Jonathan Chemla and Yves Ubelmann and Philippe Marquis,and Jean Ponce and Mathieu Aubry},
+      year={2024},
+      eprint={},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+</pre>
+    </div>
+  </div>
+<p></p>
+  <h3>Acknowledgements</h3>
+  <hr/>
+The work of Mathieu Aubry was supported by the European Research Council (ERC project DISCOVER,
+number 101076028). Jean Ponce was supported by the Louis Vuitton/ENS chair on artificial
+intelligence and the French government under management of Agence Nationale de la Recherche as
+part of the Investissements d’avenir program, reference ANR19-P3IA0001 (PRAIRIE 3IA Institute).
+This work was granted access to the HPC resources of IDRIS under the allocation 2024-AD011015272
+made by GENCI. We thank Titien Bartette, Charlotte Fafet and Loïc Landrieu for their valuable
+feedbacks, and Guillaume Astruc and Lucas Ventura for their careful proofreading.
+</div>
+
+   
+</body>
+</html> 
+
