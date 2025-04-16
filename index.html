@@ -1,1 +1,172 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Elliot Vincent</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal webpage">
+    <meta name="author" content="Elliot Vincent">    
+    <link rel="shortcut icon" href="favicon-32x32.png"> 
+    
+    <!-- FontAwesome JS-->
+    <script src="https://use.fontawesome.com/releases/v6.7.1/js/all.js" integrity="sha384-rxRGDl9CoH4u0AIeVyasIKlE45FVz6H2qXIl+fmc+3ImJn0CvfCseru5J4PALGH/" crossorigin="anonymous"></script>
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="/~elliot.vincent/">Elliot Vincent</a></h1>
+
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image" >			
+					
+					<div class="bio mb-3">73 Avenue de Paris<br>
+							      94160 Saint-Mandé, France<br>
+							      <b>Email:</b> elliot.vincent at ign dot fr</div><!--//bio-->
+                                        <ul class="social-list list-inline py-3 mx-auto">
+                                    <li class="list-inline-item"><a href="https://bsky.app/profile/elliotvincent.bsky.social"><i class="fa-brands fa-bluesky"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://twitter.com/Elt_Vincent"><i class="fab fa-twitter fa-fw"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/elliot-vincent"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://github.com/ElliotVincent"><i class="fab fa-github fa-fw"></i></a></li>
+                                <li class="list-inline-item"><a href="https://scholar.google.fr/citations?&user=AUz-y5wAAAAJ"><i class="fa fa-graduation-cap fa-fw"></i></a></li>
+                                </ul><!--//social-list-->
+                                <hr>
+                                </div><!--//profile-section-->
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    <section class="about-section py-5" style="padding-bottom: 0 !important">
+		    <div class="container" style="max-width:1000px">
+			    <h2 class="title mb-3">Summary</h2>
+			    <div class="intro">
+                    I am an AI Coordinator at the French <a href="https://www.ign.fr/institut/identity-card">National Institute of Geographic and Forest Information (IGN)</a> and researcher at <a href="https://www.umr-lastig.fr/">LASTIG</a>, working on change detection for earth observation and deep learning applied to 2D and 3D geospatial data.<br>
+                    <br>
+                    I am a finishing PhD student (expected graduation in early 2025) in the <a href="https://imagine.enpc.fr/">Imagine</a> research group at <a href="https://www.ecoledesponts.fr/en">Ecole des Ponts ParisTech</a> and in the <a href="https://www.di.ens.fr/willow/">Willow</a> team at <a href="https://www.inria.fr/en/centre-inria-de-paris">Inria Paris</a>.
+                    My PhD work focused on satellite image time series and their analysis with few or no annotations for tasks such as land use classification or change detection.
+                    I worked under the supervision of <a href="http://imagine.enpc.fr/~aubrym/">Mathieu Aubry</a> (LIGM, Ecole des Ponts, Univ Gustave Eiffel, CNRS, France) and <a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a> (Inria and DIENS (ENS-PSL, CNRS, Inria) and Center for Data Science, New York University).<br>
+                    <br>
+                    My research interests include machine learning and computer vision for remote sensing applications.
+                </div>
+                <hr style="border-top: 2px solid #003e5c">
+            </div>
+        </section>
+        <section class="about-section py-5" style="padding-bottom: 0 !important">
+            <div class="container" style="max-width:1000px">
+                <h2 class="title mb-3">Publications</h2>
+                <div style="display: flex; align-items: center; justify-content: center; margin-top:10px;"><img style="height:9vw; flex-basis: 40%; padding-right: 20px;" src="assets/images/dafals_teaser.png">
+                    <div class="intro"><i style="color: #003c5e"><a href="https://imagine.enpc.fr/~elliot.vincent/dafals">Detecting Looted Archaeological Sites from Satellite Image Time Series</a></i><br><u>Elliot Vincent</u>, Mehraïl Saroufim, Jonathan Chemla, Yves Ubelmann, Philippe Marquis, Jean Ponce, Mathieu Aubry<br><b>arXiv 2024</b> | <a href="http://arxiv.org/pdf/2409.09432">Paper</a> <br>We introduce the DAFA Looted Sites dataset, DAFA-LS, a labeled multi-temporal remote sensing dataset containing 55,480 images acquired monthly over 8 years across 675 Afghan archaeological sites, including 135 sites looted during the acquisition period.
+                    </div>
+                </div>
+                <br>
+                <div style="display: flex; align-items: center; justify-content: center; margin-top:10px;"><img style="height:9vw; flex-basis: 40%; padding-right: 20px;" src="assets/images/sitsscd_teaser.png">
+                    <div class="intro"><i style="color: #003c5e"><a href="https://imagine.enpc.fr/~elliot.vincent/sitsscd">Satellite Image Time Series Semantic Change Detection: Novel Architecture and Analysis of Domain Shift</a></i><br><u>Elliot Vincent</u>, Jean Ponce, Mathieu Aubry<br><b>arXiv 2024</b> | <a href="https://arxiv.org/pdf/2407.07616">Paper</a> <br>We propose a new architecture that improves over the state of the art on the satellite image time series semantic change detection task (SITS-SCD), scales better with the number of parameters, and leverages long-term temporal information. We investigate the impact of temporal and spatial shifts separately on global, multi-year SITS datasets.
+                    </div>
+                </div>
+                <br>
+                <div style="display: flex; align-items: center; justify-content: center; margin-top:10px;"><img style="height:9vw; flex-basis: 40%; padding-right: 20px;" src="assets/images/histoornament.png">
+                    <div class="intro"><i style="color: #003c5e"><a href="https://printed-ornaments.github.io/">Historical Printed Ornaments: Dataset and Tasks</a></i><br>Sayan K. Chaki, Sonat Baltaci, <u>Elliot Vincent</u>, Rémi Emonet, Fabienne Vial-Bonacci, Christelle Bahier-Porte, Mathieu Aubry, Thierry Fournel<br><b>ICDAR 2024</b> | <a href="https://arxiv.org/pdf/2408.08633">Paper</a> <br>We are enhancing historical ornament study using modern computer vision. We focus on three key tasks: clustering, element discovery, and unsupervised change localization. We evaluate top models for each task with new benchmarks.
+                    </div>
+                </div>
+                <br>
+                <div style="display: flex; align-items: center; justify-content: center; margin-top:10px;"><img style="height:9vw; flex-basis: 40%; padding-right: 20px;" src="assets/images/openstreetview.png">
+                    <div class="intro"><i style="color: #003c5e"><a href="http://imagine.enpc.fr/~ioannis.siglidis/osv5m/">OpenStreetView-5M: The Many Roads to Global Visual Geolocation</a></i><br>G. Astruc, N. Dufour, I. Siglidis, C. Aronssohn, N. Bouia, S. Fu, R. Loiseau, V. N. Nguyen, C. Raude, <u>Elliot Vincent</u>, L. Xu, H. Zhou, L. Landrieu<br><b>CVPR 2024</b> | <a href="https://arxiv.org/pdf/2404.18873">Paper</a> <br>We introduce OpenStreetView-5M, a large-scale, open-access dataset comprising over 5.1 million geo-referenced street view images, covering 225 countries and territories. To demonstrate the utility of our dataset, we conduct an extensive benchmark of various state-of-the-art image encoders, spatial representations, and training strategies.
+                    </div>
+                </div>
+                <br>
+                <div style="display: flex; align-items: center; justify-content: center; margin-top:10px;"><img style="height:8vw; flex-basis: 40%; padding-right: 20px;" src="assets/images/teaser_h.png">
+                    <div class="intro"><i style="color: #003c5e"><a href="https://romainloiseau.fr/learnable-earth-parser/">Learnable Earth Parser: Discovering 3D Prototypes in Aerial Scans</a></i><br>Romain Loiseau, <u>Elliot Vincent</u>, Mathieu Aubry, Lo&iuml;c Landrieu<br><b>CVPR 2024</b> | <a href="https://arxiv.org/pdf/2304.09704">Paper</a> <br>We propose an unsupervised method for parsing large 3D scans of real-world scenes into interpretable parts. Our goal is to provide a practical tool for analyzing 3D scenes with unique characteristics in the context of aerial surveying and mapping, without relying on user annotations. Our method offers significant advantage over existing approaches.
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center; margin-top:30px;"><img style="height:9vw; flex-basis: 40%; padding-right: 20px;" src="assets/images/agriitsc_teaser.png">
+                    <div class="intro"><i style="color: #003c5e"><a href="https://imagine.enpc.fr/~elliot.vincent/agriitsc">Pixel-wise Agricultural Image Time Series Classification: Comparisons and a Deformable Prototype-based Approach</a></i><br><u>Elliot Vincent</u>, Jean Ponce, Mathieu Aubry<br><b>arXiv 2023</b> | <a href="https://arxiv.org/pdf/2303.12533">Paper</a> <br>We benchmark multivariate time series classification methods on four satellite image time series dataset and propose a prototype-based approach, adding invariance to spectral deformations and temporal shifts and improving over existing baselines.
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center; margin-top:30px;"><img style="height:6vw; flex-basis: content; padding-right: 20px;" src="assets/images/smallteaser.png">
+                    <div class="intro"><i style="color: #003c5e"><a href="https://romainloiseau.fr/a-model-you-can-hear/">A Model You Can Hear: Audio Classification with Playable Prototypes</a></i><br>Romain Loiseau, Baptiste Bouvier, Yann Teytaut, <u>Elliot Vincent</u>, Mathieu Aubry, Lo&iuml;c Landrieu<br><b>CVPR Sight and Sound Workshop 2022 - ISMIR 2022</b> | <a href="https://arxiv.org/pdf/2208.03311">Paper</a> <br>We propose an audio identification model based on learnable spectral prototypes. Our model can be trained with or without supervision and reaches state-of-the-art results for speaker and instrument identification, while remaining easily interpretable.
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center; margin-top:30px;"><img style="height:5.7vw; flex-basis: content; padding-right: 20px;" src="assets/images/sprites1.png">
+                    <div class="intro"><i style="color: #003c5e"><a href="https://www.tmonnier.com/DTI-Sprites/">Unsupervised Layered Image Decomposition into Object Prototypes</a></i><br>Tom Monnier, <u>Elliot Vincent</u>, Jean Ponce, Mathieu Aubry<br><b>ICCV 2021</b> | <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Monnier_Unsupervised_Layered_Image_Decomposition_Into_Object_Prototypes_ICCV_2021_paper.pdf">Paper</a> <br>An unsupervised learning framework to decompose images into object layers modeled as transformations of learnable sprites.
+                    </div>
+                </div>
+                <hr style="border-top: 2px solid #003e5c">
+            </div>
+        </section>
+        <section class="about-section py-5" style="padding-bottom: 0 !important">
+            <div class="container" style="max-width:1000px">
+                    <h2 class="title mb-3">
+                        Resume
+                    </h2>
+                    <div class="intro">
+                        <b>[2021-2024]</b> &nbsp; &nbsp; &nbsp; PhD in Computer Science, ENPC and Inria, soon to be defended<br>
+                        <b>[Feb-Jul 2021]</b> &nbsp;Project officer at the "Waste collection, Street cleaning and Water" department of Ville de Paris<br>
+                        <b>[2020-2021]</b> &nbsp; &nbsp; &nbsp; Master in Public Policies for Climate Change and Ecological Transition at ENPC and AgroParisTech<br>
+                        <b>[Mar-Aug 2020]</b> Research internship at Imagine and Willow on unsupervised 2D scene decomposition<br>
+                        <b>[2019-2020]</b> &nbsp; &nbsp; &nbsp; Mathematics, Vision and Learning master of the ENS and engineering program of ENPC<br>
+                        <b>[Mar-Aug 2019]</b> Internship at IBM Research Z&uuml;rich on automated methods for diagram understanding<br>
+                        <b>[2016-2019]</b> &nbsp; &nbsp; &nbsp; Master in Applied Mathematics for Computer Science at &Eacute;cole polytechnique<br>
+                    </div>
+                <hr style="border-top: 2px solid #003e5c">
+            </div>
+        </section>
+	    <section class="about-section py-5" style="padding-bottom: 0 !important">
+            <div class="container" style="max-width:1000px">
+                    <h2 class="title mb-3">
+                        About me
+                    </h2>
+                    <div class="intro">
+                        In addition to my interest for computer vision and machine learning, I also graduated with a Master's degree in public policies for environmental protection. I love animals of all sorts but have a weird and particular obsession for otters. On my free time, you will see me playing football with friends or enjoying a nice swim at the pool.
+                    </div>
+                <hr style="border-top: 2px solid #003e5c">
+            </div>
+        </section>
+        <section class="about-section py-5" style="padding-bottom: 0 !important">
+            <div class="container" style="max-width:1000px">
+                    <h2 class="title mb-3">
+                        Affiliations
+                    </h2>
+                    <div class="intro">
+                        - LASTIG, Université Gustave Eiffel, IGN, ENSG,<br>
+                        - LIGM (UMR 8049), Ecole des Ponts, Univ. Gustave Eiffel, CNRS<br>
+                        - Inria and DIENS (ENS-PSL, CNRS, Inria)<br>
+                    </div>
+                    <img style="height:4.5vw; padding-right:8px; padding-top:5px" src="assets/images/ign_logo.svg">
+                    <img style="height:4.5vw; padding-right:10px; padding-top:5px" src="assets/images/lastig_logo.png">
+                    <img style="height:4.5vw; padding-right:7px; padding-top:5px" src="assets/images/img_mte.png">
+                    <img style="height:4.5vw; padding-right:30px; padding-top:5px" src="assets/images/img_enpc.jpg">
+                    <img style="height:4.5vw; padding-right:20px; padding-top:5px" src="assets/images/img_ligm.png">
+                    <img style="height:4.5vw; padding-top:5px" src="assets/images/img_inr_logo_rouge.png">
+                <hr style="border-top: 2px solid #003e5c">
+            </div>
+        </section>
+
+	    <footer class="footer text-center py-2 theme-bg-dark">
+		   
+	    </footer>
+    
+    </div><!--//main-wrapper-->
+          
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+
+</body>
+</html> 
+
