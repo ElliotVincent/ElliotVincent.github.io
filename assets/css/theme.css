@@ -5,15 +5,15 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --paper:   #F6F4EE;
-  --ink:     #1D2321;
-  --line:    #DCD7C8;
-  --line-soft: #E9E5D9;
-  --teal:    #2C6459;
-  --teal-soft: #CFE0DA;
+  --paper:   #FFFFFF;
+  --ink:     #003e5c;
+  --line:    #003e5c;
+  --line-soft: #003e5c;
+  --teal:    #003e5c;
+  --teal-soft: #003e5c;
   --gold:    #B8863C;
   --gold-soft: #F1E0BE;
-  --muted:   #726C5C;
+  --muted:   #FFFFFF;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
