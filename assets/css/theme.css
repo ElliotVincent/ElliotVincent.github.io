@@ -11184,7 +11184,6 @@ hr.new2 {
 	background: var(--paper);
 	color: var(--ink);
 	font-family: 'Inter', sans-serif;
-	padding: 48px clamp(20px, 5vw, 56px);
 	max-width: 880px;
 	margin: 0 auto;
 }
@@ -11217,7 +11216,7 @@ hr.new2 {
 
 .table-scroll{
 	overflow-x: auto;
-	border-top: 1px solid var(--ink);
+	border-top: none;
 	border-bottom: 1px solid var(--line);
 	-webkit-overflow-scrolling: touch;
 }
@@ -11265,7 +11264,6 @@ tbody th{
 	left: 0;
 	background: var(--paper);
 	z-index: 2;
-	box-shadow: 1px 0 0 var(--line);
 }
 
 tbody td{
@@ -11276,9 +11274,7 @@ tbody td{
 }
 
 tbody tr:last-child td,
-tbody tr:last-child th{
-	border-bottom: none;
-}
+tbody tr:last-child th,
 
 .mark{
 	position: relative;
