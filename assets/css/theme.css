@@ -13,7 +13,7 @@
   --teal-soft: #003e5c;
   --gold:    #B8863C;
   --gold-soft: #F1E0BE;
-  --muted:   #FFFFFF;
+  --muted:   #003e5c;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -473,7 +473,7 @@ small,
 mark,
 .mark {
   padding: .2em;
-  background-color: #fcf8e3
+  background-color: #FFFFFF
 }
 
 .list-unstyled {
@@ -11278,7 +11278,7 @@ tbody td{
 
 tbody tr:hover td,
 tbody tr:hover th{
-	background: #EFEBDD;
+	background: #AFC3CC;
 }
 tbody tr:hover th{ box-shadow: 1px 0 0 var(--line); }
 
