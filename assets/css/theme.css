@@ -11264,6 +11264,7 @@ tbody th{
 	left: 0;
 	background: var(--paper);
 	z-index: 2;
+	border-bottom: 1px solid var(--line-soft);
 }
 
 tbody td{
@@ -11274,7 +11275,9 @@ tbody td{
 }
 
 tbody tr:last-child td,
-tbody tr:last-child th,
+tbody tr:last-child th{
+	border-bottom: none;
+}
 
 .mark{
 	position: relative;
