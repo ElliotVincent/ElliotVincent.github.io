@@ -101,6 +101,54 @@ table {
 
 * { box-sizing: border-box; }
 
+.review-activity{
+	background: var(--paper);
+	color: var(--ink);
+	font-family: 'Inter', sans-serif;
+	padding: 48px clamp(20px, 5vw, 56px);
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+.review-activity .eyebrow{
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 12px;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--teal);
+	margin: 0 0 10px;
+}
+
+.review-activity h2{
+	font-family: 'Source Serif 4', serif;
+	font-weight: 600;
+	font-size: clamp(26px, 3.4vw, 32px);
+	line-height: 1.2;
+	margin: 0 0 6px;
+	letter-spacing: -0.01em;
+}
+
+.review-activity .dek{
+	font-size: 14.5px;
+	color: var(--muted);
+	max-width: 52ch;
+	line-height: 1.55;
+	margin: 0 0 32px;
+}
+
+.table-scroll{
+	overflow-x: auto;
+	border-top: 1px solid var(--ink);
+	border-bottom: 1px solid var(--line);
+	-webkit-overflow-scrolling: touch;
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+	min-width: 560px;
+}
+
 caption{
 	caption-side: top;
 	text-align: left;
@@ -150,13 +198,13 @@ tbody td{
 
 tbody tr:hover td,
 tbody tr:hover th{
-background: #EFEBDD;
+	background: #EFEBDD;
 }
 tbody tr:hover th{ box-shadow: 1px 0 0 var(--line); }
 
 tbody tr:last-child td,
 tbody tr:last-child th{
-border-bottom: none;
+	border-bottom: none;
 }
 
 .mark{
@@ -207,6 +255,7 @@ border-bottom: none;
 }
 
 .legend .fig{
+	font-family: 'IBM Plex Mono', monospace;
 	font-size: 11px;
 	letter-spacing: 0.08em;
 	color: var(--ink);
@@ -226,3 +275,4 @@ border-bottom: none;
 	.review-activity{ padding: 32px 16px; }
 	.legend{ flex-direction: column; align-items: flex-start; gap: 10px; }
 }
+
