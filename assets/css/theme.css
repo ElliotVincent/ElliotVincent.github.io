@@ -8,7 +8,7 @@
   --paper:   #FFFFFF;
   --ink:     #003e5c;
   --line:    #003e5c;
-  --line-soft: #003e5c;
+  --line-soft: #003e5c40;
   --teal:    #003e5c;
   --teal-soft: #003e5c;
   --gold:    #B8863C;
@@ -11259,7 +11259,7 @@ tbody th{
 	font-weight: 600;
 	font-size: 15px;
 	text-align: left;
-	padding: 10px 20px 10px 2px;
+	padding: 1px 20px 1px 2px;
 	white-space: nowrap;
 	position: sticky;
 	left: 0;
@@ -11270,7 +11270,7 @@ tbody th{
 
 tbody td{
 	text-align: center;
-	padding: 6px 8px;
+	padding: 1px 8px;
 	border-bottom: 1px solid var(--line-soft);
 	width: 56px;
 }
