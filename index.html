@@ -19,6 +19,49 @@
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+	
+	<style>
+	    html { scroll-behavior: smooth; }
+	    .about-section { scroll-margin-top: 60px; } /* keeps titles from hiding under the bar */
+	
+	    .top-nav {
+	        position: sticky;
+	        top: 0;
+	        z-index: 1000;
+	        background: #003e5c;
+	        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+	    }
+	    .top-nav ul {
+	        list-style: none;
+	        margin: 0 auto;
+	        padding: 0 10px;
+	        max-width: 1000px;
+	        display: flex;
+	        justify-content: center;
+	        flex-wrap: nowrap;
+	        overflow-x: auto;           /* scrolls sideways on small screens */
+	        -webkit-overflow-scrolling: touch;
+	    }
+	    .top-nav a {
+	        display: block;
+	        padding: 14px 16px;
+	        color: #fff;
+	        font-family: 'Inter', sans-serif;
+	        font-size: 0.95rem;
+	        font-weight: 500;
+	        text-decoration: none;
+	        white-space: nowrap;
+	        border-bottom: 3px solid transparent;
+	        transition: background 0.2s, border-color 0.2s;
+	    }
+	    .top-nav a:hover,
+	    .top-nav a:focus {
+	        color: #fff;
+	        text-decoration: none;
+	        background: rgba(255, 255, 255, 0.12);
+	        border-bottom-color: #fff;
+	    }
+	</style>
 
 </head> 
 
@@ -54,7 +97,18 @@
     </header>
     
     <div class="main-wrapper">
-	    <section class="about-section py-5" style="padding-bottom: 0 !important">
+		<nav class="top-nav" aria-label="Page sections">
+		    <ul>
+		        <li><a href="#summary">Summary</a></li>
+		        <li><a href="#news">News</a></li>
+		        <li><a href="#publications">Publications</a></li>
+		        <li><a href="#review">Reviewing</a></li>
+		        <li><a href="#resume">Resume</a></li>
+		        <li><a href="#about">About me</a></li>
+		    </ul>
+		</nav>
+		
+	    <section id="summary" class="about-section py-5" style="padding-bottom: 0 !important">
 		    <div class="container" style="max-width:1000px">
 			    <h2 class="title mb-3">Summary</h2>
 			    <div class="intro">
@@ -70,7 +124,7 @@
             </div>
         </section>
 	    
-	<section class="about-section py-5" style="padding-bottom: 0 !important">
+	<section id="news" class="about-section py-5" style="padding-bottom: 0 !important">
 	    <div class="container" style="max-width:1000px">
 	        <h2 class="title mb-3">News</h2>
 	        <div class="intro">
@@ -96,7 +150,7 @@
 	    </div>
 	</section>
 	    
-        <section class="about-section py-5" style="padding-bottom: 0 !important">
+        <section id="publications" class="about-section py-5" style="padding-bottom: 0 !important">
             <div class="container" style="max-width:1000px">
                 <h2 class="title mb-3">Publications</h2>
 				<div style="display: flex; align-items: center; justify-content: center; margin-top:10px;"><img style="height:9vw; flex-basis: 40%; padding-right: 20px;" src="assets/images/pom_teaser.png">
@@ -153,7 +207,7 @@
                 <hr style="border-top: 2px solid #003e5c">
             </div>
         </section>
-        <section class="about-section py-5" style="padding-bottom: 0 !important">
+        <section id="review" class="about-section py-5" style="padding-bottom: 0 !important">
             <div class="container" style="max-width:1000px">
                     <h2 class="title mb-3">
                         Reviewing activity
@@ -289,7 +343,7 @@
                 <hr style="border-top: 2px solid #003e5c">
             </div>
         </section>
-        <section class="about-section py-5" style="padding-bottom: 0 !important">
+        <section id="resume" class="about-section py-5" style="padding-bottom: 0 !important">
             <div class="container" style="max-width:1000px">
                     <h2 class="title mb-3">
                         Resume
@@ -307,7 +361,7 @@
                 <hr style="border-top: 2px solid #003e5c">
             </div>
         </section>
-	    <section class="about-section py-5" style="padding-bottom: 0 !important">
+	    <section id="about" class="about-section py-5" style="padding-bottom: 0 !important">
             <div class="container" style="max-width:1000px">
                     <h2 class="title mb-3">
                         About me
