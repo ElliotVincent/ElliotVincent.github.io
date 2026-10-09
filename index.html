@@ -22,7 +22,7 @@
 	
 	<style>
 	    html { scroll-behavior: smooth; }
-		.about-section { scroll-margin-top: 60px; }
+		.about-section { scroll-margin-top: -3rem; }	
 		.top-nav {
 		    margin: 0 0 1rem 0;
 		}
@@ -30,7 +30,7 @@
 		    list-style: none;
 		    margin: 0;
 		    padding: 0;
-		    display: block;              /* vertical list instead of a flex row */
+		    display: block;             
 		}
 		.top-nav a {
 		    display: block;
@@ -41,34 +41,28 @@
 		    font-weight: 500;
 		    text-align: center;
 		    text-decoration: none;
-		    border-left: 3px solid transparent;
-		    transition: background 0.2s, border-color 0.2s;
 		}
 		.top-nav a:hover,
 		.top-nav a:focus {
 		    color: #fff;
-		    text-decoration: none;
-		    background: rgba(255, 255, 255, 0.12);
-		    border-left-color: #fff;
-		}		
+		    text-decoration: underline;
+		}
 		@media (max-width: 991.98px) {
 		    .header {
 		        position: sticky !important;
 		        top: 0;
 		        z-index: 1000;
 		        width: 100%;
-		        max-height: 100vh;           /* fallback */
-		        max-height: 100dvh;          /* accounts for the mobile browser toolbar */
-		        overflow-y: auto;            /* lets the open menu scroll instead of overflowing the screen */
+		        max-height: 100vh;           
+		        max-height: 100dvh;
+		        overflow-y: auto;
 		        -webkit-overflow-scrolling: touch;
 		    }
 		    .header .blog-name {
-		        padding-top: 0.5rem !important;   /* optional: slimmer title bar */
-		        font-size: 1.4rem;                /* optional: smaller title when stuck */
-		    }
-		
-		    /* the bar now covers the top of the screen, so anchors need an offset */
-		    .about-section { scroll-margin-top: 70px; }
+		        padding-top: 0.5rem !important; 
+		        font-size: 1.4rem;
+		    }			
+		    html { scroll-padding-top: 64px; }
 		}
 		@media (max-width: 767.98px) {
 		    #publications .container > div[style*="display: flex"] {
