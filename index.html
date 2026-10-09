@@ -22,41 +22,54 @@
 	
 	<style>
 	    html { scroll-behavior: smooth; }
-	    .top-nav {
-	        background: #003e5c;
-	    }
-	    .top-nav ul {
-			align-items: center;
-	        list-style: none;
-	        margin: 0 auto;
-	        padding: 0 10px;
-	        max-width: 1000px;
-	        display: flex;
-	        justify-content: center;
-	        flex-wrap: nowrap;
-	        overflow-x: auto;           /* scrolls sideways on small screens */
-	        -webkit-overflow-scrolling: touch;
-	    }
-	    .top-nav a {
-	        display: block;
-	        padding: 14px 16px;
-	        color: #fff;
-	        font-family: 'Inter', sans-serif;
-	        font-size: 0.95rem;
-	        font-weight: 500;
-	        text-decoration: none;
-	        white-space: nowrap;
-	        border-bottom: 3px solid transparent;
-	        transition: background 0.2s, border-color 0.2s;
-	    }
-	    .top-nav a:hover,
-	    .top-nav a:focus {
-	        color: #fff;
-	        text-decoration: none;
-	        background: rgba(255, 255, 255, 0.12);
-	        border-bottom-color: #fff;
-	    }
-
+		.about-section { scroll-margin-top: 60px; }
+		.top-nav {
+		    margin: 0 0 1rem 0;
+		}
+		.top-nav ul {
+		    list-style: none;
+		    margin: 0;
+		    padding: 0;
+		    display: block;              /* vertical list instead of a flex row */
+		}
+		.top-nav a {
+		    display: block;
+		    padding: 8px 12px;
+		    color: #fff;
+		    font-family: 'Inter', sans-serif;
+		    font-size: 0.95rem;
+		    font-weight: 500;
+		    text-align: center;
+		    text-decoration: none;
+		    border-left: 3px solid transparent;
+		    transition: background 0.2s, border-color 0.2s;
+		}
+		.top-nav a:hover,
+		.top-nav a:focus {
+		    color: #fff;
+		    text-decoration: none;
+		    background: rgba(255, 255, 255, 0.12);
+		    border-left-color: #fff;
+		}		
+		@media (max-width: 991.98px) {
+		    .header {
+		        position: sticky !important;
+		        top: 0;
+		        z-index: 1000;
+		        width: 100%;
+		        max-height: 100vh;           /* fallback */
+		        max-height: 100dvh;          /* accounts for the mobile browser toolbar */
+		        overflow-y: auto;            /* lets the open menu scroll instead of overflowing the screen */
+		        -webkit-overflow-scrolling: touch;
+		    }
+		    .header .blog-name {
+		        padding-top: 0.5rem !important;   /* optional: slimmer title bar */
+		        font-size: 1.4rem;                /* optional: smaller title when stuck */
+		    }
+		
+		    /* the bar now covers the top of the screen, so anchors need an offset */
+		    .about-section { scroll-margin-top: 70px; }
+		}
 		@media (max-width: 767.98px) {
 		    #publications .container > div[style*="display: flex"] {
 		        flex-direction: column;
@@ -456,6 +469,11 @@
     <script src="assets/plugins/popper.min.js"></script> 
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
 
+	<script>
+	    $('#navigation a[href^="#"]').on('click', function () {
+	        $('#navigation').collapse('hide');
+	    });
+	</script>
 </body>
 </html> 
 
