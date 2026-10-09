@@ -462,10 +462,20 @@
     <script src="assets/plugins/jquery-3.3.1.min.js"></script>
     <script src="assets/plugins/popper.min.js"></script> 
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-
 	<script>
-	    $('#navigation a[href^="#"]').on('click', function () {
-	        $('#navigation').collapse('hide');
+	    $('#navigation a[href^="#"]').on('click', function (e) {
+	        var target = document.querySelector(this.getAttribute('href'));
+	        var $nav = $('#navigation');
+	        if (!target) return;
+	
+	        // Only when the mobile menu is open; on desktop the normal anchor jump is used
+	        if ($nav.hasClass('show')) {
+	            e.preventDefault();
+	            $nav.one('hidden.bs.collapse', function () {
+	                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	            });
+	            $nav.collapse('hide');
+	        }
 	    });
 	</script>
 </body>
